@@ -1,7 +1,7 @@
 n = int(input())
-for i in range(n*2-1, 0, -2):
-    for j in range(n*2-1-i):
-        print(" ", end="")
+for i in range(n):
     for j in range(i):
+        print(" ", end=" ")
+    for j in range(n*2-i*2-1):
         print("*", end=" ")
     print()
